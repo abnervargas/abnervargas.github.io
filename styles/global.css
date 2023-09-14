@@ -234,13 +234,23 @@ body::-webkit-scrollbar-thumb {
 /* entrenadores */
 .trainers {
 	width: 100%;
-	height: calc(100vh - 74px);
+	min-height: calc(100vh - 74px);
+	padding: 100px 0px;
 	background: #121212;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 50px;
 	flex-direction: column;
+}
+.trainers-ctn {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+.trainers p {
+	text-align: center;
 }
 .card-trainer {
 	position: relative;
@@ -273,6 +283,9 @@ body::-webkit-scrollbar-thumb {
 
 .SwiperTrainer .swiper-slide {
 	width: 430px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 /* footer */
@@ -396,6 +409,9 @@ body::-webkit-scrollbar-thumb {
 	}
 	.card-reason {
 		width: 100%;
+	}
+	.card-trainer {
+		height: 450px;
 	}
 }
 
