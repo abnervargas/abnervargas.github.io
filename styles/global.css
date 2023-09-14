@@ -174,7 +174,8 @@ body::-webkit-scrollbar-thumb {
 /* experience */
 .experience {
 	width: 100%;
-	height: calc(100vh - 74px);
+	min-height: calc(100vh - 74px);
+	padding: 100px 0px;
 	background-image: url('../assets/img/bannerExp.png');
 	display: flex;
 	align-items: center;
@@ -186,6 +187,7 @@ body::-webkit-scrollbar-thumb {
 	justify-content: space-between;
 }
 .exp-left {
+	width: 50%;
 	max-width: 600px;
 	display: flex;
 	flex-direction: column;
@@ -362,6 +364,13 @@ body::-webkit-scrollbar-thumb {
 		height: calc(100vh - 65px);
 		margin-top: 65px;
 	}
+	.exp-ctn {
+		flex-direction: column;
+		gap: 180px;
+	}
+	.exp-left {
+		width: 100%;
+	}
 }
 
 /* 'ipad-pequeña' */
@@ -398,5 +407,14 @@ body::-webkit-scrollbar-thumb {
 	}
 	.stat-item h2 {
 		font-size: 35px;
+	}
+	.exp-photo {
+		width: 260px;
+		height: 360px;
+	}
+	.exp-photo::before,
+	.exp-photo::after {
+		width: 260px;
+		height: 360px;
 	}
 }
