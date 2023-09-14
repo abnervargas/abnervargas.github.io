@@ -138,7 +138,8 @@ body::-webkit-scrollbar-thumb {
 
 /* por que nosotros */
 .intro-question {
-	height: calc(100vh - 74px);
+	min-height: calc(100vh - 74px);
+	padding: 100px 0px;
 	background-color: #121212;
 	display: flex;
 	align-items: center;
@@ -162,7 +163,7 @@ body::-webkit-scrollbar-thumb {
 	padding: 24px 40px;
 	text-align: start;
 	width: 49%;
-	height: 300px;
+	min-height: 300px;
 	border: solid 1px #ff0000;
 }
 .card-reason h2 {
@@ -319,6 +320,12 @@ body::-webkit-scrollbar-thumb {
 	.banner-ctn h1 {
 		font-size: 80px;
 	}
+	.title {
+		font-size: 50px;
+	}
+	.card-reason {
+		width: 48%;
+	}
 }
 
 /* 'portatil-pequeño' */
@@ -374,6 +381,12 @@ body::-webkit-scrollbar-thumb {
 	}
 	.banner-stats {
 		align-items: flex-start;
+	}
+	.cards-reasons {
+		flex-direction: column;
+	}
+	.card-reason {
+		width: 100%;
 	}
 }
 
